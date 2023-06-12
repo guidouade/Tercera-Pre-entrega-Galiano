@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+<p>Estás buscando: <strong>{{query}}</strong></p>
+
+{% if recuerdos %}
+    <p>Recuerdos encontrados: {{recuerdos|length}} recuerdos</p>
+    <ul>
+        {% for recuerdo in recuerdos %}
+            <li>
+                {{recuerdo.titulo}}
+            </li>
+        {% endfor%}
+    </ul>
+{% else %}
+
+    <p>No está el recuerdo que buscas</p>
+
+{% endif %}
+  
+</body>
+</html>

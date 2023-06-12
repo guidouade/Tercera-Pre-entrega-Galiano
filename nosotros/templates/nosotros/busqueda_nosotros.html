@@ -1,0 +1,15 @@
+<html>
+
+<head>
+
+<title>Quienes somos - Búsqueda de Personas de Medio Pique</title>
+
+</head>
+
+<body>
+    <form action="/buscar_nosotros/"  method="GET">{% csrf_token %}
+        <input type = "text" name="fttc">
+        <input type = "submit" value="Buscar">
+     </form>
+</body>
+</html>

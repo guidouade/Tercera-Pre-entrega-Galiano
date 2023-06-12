@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+<p>Estás buscando: <strong>{{query}}</strong></p>
+
+{% if fotos %}
+    <p>Fototecas encontradas: {{fotos|length}} fotos</p>
+    <ul>
+        {% for foto in fotos %}
+            <li>
+                {{foto.titulo}}
+            </li>
+        {% endfor%}
+    </ul>
+{% else %}
+
+    <p>No está la fototeca buscada</p>
+
+{% endif %}
+  
+</body>
+</html>

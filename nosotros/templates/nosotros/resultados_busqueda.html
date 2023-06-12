@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+<p>Estás buscando: <strong>{{query}}</strong></p>
+
+{% if quien %}
+    <p>Personas encontradas: {{quien|length}} quien</p>
+    <ul>
+        {% for q in quien %}
+            <li>
+                {{q.titulo}}
+            </li>
+        {% endfor%}
+    </ul>
+{% else %}
+
+    <p>No está la persona que buscas</p>
+
+{% endif %}
+  
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+
+<head>
+
+<title>Fototeca - Búsqueda de Fototecas</title>
+
+</head>
+
+<body>
+    <form action="/buscar/"  method="GET">{% csrf_token %}
+        <input type = "text" name="fttc">
+        <input type = "submit" value="Buscar">
+     </form>   
+</body>
+</html>
